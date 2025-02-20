@@ -1,3 +1,11 @@
-export default function TabButton(props) {
-    return <li><button></button></li>;
+import { children } from "react";
+
+export default function TabButton({ children, onSelect }) {
+
+
+    return (
+        <li>
+            <button onClick={onSelect}>{children}</button>
+        </li>
+    );
 }
